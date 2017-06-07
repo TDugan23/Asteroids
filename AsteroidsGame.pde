@@ -105,7 +105,7 @@ public void draw()
   showStars();
   if(movingW)
   {
-    player.accelerate(.5);
+    player.accelerate(.23);
   }
   if(movingD)
   {
