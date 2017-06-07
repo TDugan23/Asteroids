@@ -19,7 +19,7 @@ class Bullet extends Floater
     //  yCorners[i] = (int)random(3,20);
     //}
     
-    myColor = 255;   
+    myColor = color((int)random(255),(int)random(255),(int)random(255));   
    
       //bullet starts from spaceship location
     myCenterX = player.getX();
