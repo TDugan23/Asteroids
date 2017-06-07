@@ -17,6 +17,7 @@ int level;
 
 public void setup() 
 {
+  color(255,255,255);
   highScores.add(-1);
   score=0;
   gameMode=0;
@@ -30,9 +31,10 @@ public void setup()
 
 public void draw() 
 {
+ 
   if(gameMode==0 && !instructions)
   {
-    background(23);
+    background(23,0,50);
     showStars();
     
     textSize(143);
@@ -43,7 +45,7 @@ public void draw()
     float t=textWidth("Press Q to Start");
     text("Press Q to Start",(width/2)-(t/2),400);
    
-    textSize(25);
+    textSize(35);
     float f=textWidth("Press I For Instructions");
     text("Press I For Instructions",(width/2)-(f/2),700);
    
@@ -55,7 +57,7 @@ public void draw()
   if(instructions)
   {
 
-    background(10);
+    background(23,0,50);
     showStars();
  
     float y=textWidth("The goal of this game is to shoot as many ");
@@ -97,7 +99,8 @@ public void draw()
   if(gameMode==1)
   {
     
-  background(0,0,100);
+    
+  background(23,0,50);
   player.show();
   showStars();
   if(movingW)
@@ -117,8 +120,11 @@ public void draw()
   showAsteroids();
   showBullet();
   textSize(40);
+  fill(255,255,255);
   text(lives,75,100);
+  fill(255,255,255);
   text(score,75,150);
+
   
   checkGameOver();
   }
@@ -350,4 +356,3 @@ void checkGameOver(){
      print(highScores);
   }
 }
-
