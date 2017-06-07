@@ -11,6 +11,7 @@ class Star
    }
    
    public void show() {
+     fill(255,255,255);
      ellipse(x, y, size, size);
    }
 }
