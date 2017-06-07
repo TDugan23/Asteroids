@@ -192,7 +192,7 @@ public void keyPressed()
   if (key == 'w')
   {
     movingW = true;
-    //player.accelerate(.5);
+    //player.accelerate(.23);
   }
   if (key == 'd')
   {
