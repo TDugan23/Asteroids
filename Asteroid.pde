@@ -3,10 +3,10 @@ class Asteroid extends Floater
   public Asteroid()
   {
 
-    corners = 9;
+    corners = 23;
     float radius=20;
     float angle =TWO_PI/corners;
-    float r=10;
+    float r=5;
     xCorners = new int[corners];
     yCorners = new int[corners];
   
@@ -15,7 +15,7 @@ class Asteroid extends Floater
       yCorners[i] = (int)((radius+random(-r,r))*cos(angle*i));
     }
     
-    myColor = 255;   
+    myColor = color(225,190,235);   
    
     if (random(1) < .5) {
      myCenterX = (int)random(width);
@@ -92,3 +92,6 @@ class Asteroid extends Floater
    
   }
 }
+
+
+
